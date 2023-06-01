@@ -1,0 +1,60 @@
+{
+  "name": "twitterdapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "emoji-mart": "^3.0.1",
+    "postcss-cli": "^9.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.20.5",
+    "react-identicons": "^1.2.5",
+    "react-moment": "^1.1.1",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2",
+    "web3": "^1.6.1"
+  },
+  "homepage": "http://krixnaas.github.io/oneact",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "watch:css": "postcss -w src/styles/tailwind.css -o src/styles/output.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^9.8.8",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.4.5",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  }
+}
